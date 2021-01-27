@@ -1,0 +1,132 @@
+.backGroundSet{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.login_check{
+    position: absolute;
+    top: 10rem;
+    left: 13.5rem;
+    width: 14rem;
+    height: 2.8rem;
+    background: #fff;
+    transform-origin: 0 100%;
+    transform: rotate(-45deg);
+}
+.login_check:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 2.8rem;
+    height: 5.2rem;
+    background: #fff;
+    box-shadow: inset -0.2rem -2rem 2rem rgba(0, 0, 0, 0.2);
+}
+.Login_Container{
+    width: 500px;
+    height: 500px;
+    background-color: #ffffff;
+    background-color: rgba( 255, 255, 255, 0);
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.Login_Title{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.Login_icon{
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.9);
+    stroke-width: 1;
+}
+.Login_from{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2.5rem 1.5rem;
+}
+.Login_Row{
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.login_input_id{
+    font-size: 1.0rem;
+    color: rgba( 255, 255, 255, 0.9);
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.login_input_pw{
+    font-size: 1.0rem;
+    color: rgba( 255, 255, 255, 0.9);
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.login_button{
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 1rem;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border-radius: 3rem;
+    background-color: rgba( 255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+}
+.Login_signup{
+    font-size: 1.2rem;
+    color: rgba( 255, 255, 255, 0.8);
+}
+
+.Login_signup a{
+    color: #fff;
+    cursor: pointer;
+}
+
+.space{
+    padding: 10px;
+}
+
+.login_button::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1.5rem;
+    margin-top: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border: 2px dotted #fff;
+    border-radius: 50%;
+    border-left: none;
+    border-bottom: none;
+    transition: opacity 0.1s 0.4s;
+    opacity: 0;
+}
+
+input::placeholder {
+    color: white;
+}
+body{
+    margin: 0;
+}
