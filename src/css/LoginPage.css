@@ -56,9 +56,15 @@
 
 }
 .Login_path{
-    stroke-dasharray: 76;
-    stroke-dashoffset: 150;
-    animation: dash 5s linear alternate infinite;
+    animation : icon 5s alternate;
+}
+@keyframes icon {
+    to {
+        stroke-dasharray: 80;
+    }
+    from {
+        stroke-dasharray: 0;
+    }
 }
 
 .Login_from{
