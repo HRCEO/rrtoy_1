@@ -1,15 +1,12 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import BackGroundVideo from '../video/main_login.mp4';
-import '../css/LoginPage.css';
+import '../css/LoginPage.css'
 
 class LoginPage extends Component {
-
-    handleClick() {
-        console.log('this is:', this);
-    }
+    text;
     render(){
         return (
-            <Fragment>
+            <div>
                 <video autoPlay loop muted
                        style={{
                            position:'absolute',
@@ -41,12 +38,12 @@ class LoginPage extends Component {
                                 <input type="password" className="login_input_pw" placeholder="Password"/>
                             </div>
                             <div className="space"></div>
-                            <button type="button" className="login_submit" onClick={() => this.handleClick()}>Sign in</button>
+                            <button type="button" className="login_button">Sign in</button>
                             <p className="Login_signup">Don't have an account? &nbsp;<a>Sign up</a></p>
                         </div>
                     </div>
                 </div>
-            </Fragment>
+            </div>
         );
     }
 }
